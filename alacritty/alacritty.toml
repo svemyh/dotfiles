@@ -1,0 +1,84 @@
+[[colors.indexed_colors]]
+color = "0xcb4b16"
+index = 16
+
+[[colors.indexed_colors]]
+color = "0xd33682"
+index = 17
+
+[[colors.indexed_colors]]
+color = "0x073642"
+index = 18
+
+[[colors.indexed_colors]]
+color = "0x586e75"
+index = 19
+
+[[colors.indexed_colors]]
+color = "0x839496"
+index = 20
+
+[[colors.indexed_colors]]
+color = "0xeee8d5"
+index = 21
+
+[colors.bright]
+black = "0x333333"
+blue = "0x61afef"
+cyan = "0x56b6c2"
+green = "0x98c379"
+magenta = "0xf33636"
+red = "0xff6c6b"
+white = "0xdddddd"
+yellow = "0xd19a66"
+
+[colors.cursor]
+cursor = "0xD8D8D8"
+text = "0x181818"
+
+[colors.normal]
+black = "0x1E1E1E"
+blue = "0x61afef"
+cyan = "0x56b6c2"
+green = "0x98c379"
+magenta = "0xf33636"
+red = "0xff6c6b"
+white = "0xdddddd"
+yellow = "0xd19a66"
+
+[colors.primary]
+background = "0x1E1E1E"
+foreground = "0xE3E3E3"
+
+[cursor]
+style = "Block"
+unfocused_hollow = true
+
+[debug]
+log_level = "Warn"
+
+[env]
+TERM = "xterm-256color"
+
+[font]
+size = 7.4
+
+[font.normal]
+family = "monospace"
+style = "Regular"
+
+[scrolling]
+history = 5000
+multiplier = 3
+
+[window]
+opacity = 0.5
+title = "Terminal"
+
+[window.class]
+general = "Alacritty"
+instance = "Alacritty"
+
+[window.padding]
+x = 6
+y = 6
