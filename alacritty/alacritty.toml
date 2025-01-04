@@ -1,84 +1,144 @@
-[[colors.indexed_colors]]
-color = "0xcb4b16"
-index = 16
+live_config_reload = true
 
-[[colors.indexed_colors]]
-color = "0xd33682"
-index = 17
-
-[[colors.indexed_colors]]
-color = "0x073642"
-index = 18
-
-[[colors.indexed_colors]]
-color = "0x586e75"
-index = 19
-
-[[colors.indexed_colors]]
-color = "0x839496"
-index = 20
-
-[[colors.indexed_colors]]
-color = "0xeee8d5"
-index = 21
+[bell]
+animation = "EaseOut"
+duration = 0
 
 [colors.bright]
-black = "0x333333"
-blue = "0x61afef"
-cyan = "0x56b6c2"
-green = "0x98c379"
-magenta = "0xf33636"
-red = "0xff6c6b"
-white = "0xdddddd"
-yellow = "0xd19a66"
+black = "0x7f8c8d"
+blue = "0x3daee9"
+cyan = "0x16a085"
+green = "0x1cdc9a"
+magenta = "0x8e44ad"
+red = "0xc0392b"
+white = "0xffffff"
+yellow = "0xfdbc4b"
 
 [colors.cursor]
-cursor = "0xD8D8D8"
-text = "0x181818"
+cursor = "0xfcfcfc"
+text = "0x232627"
+
+[colors.dim]
+black = "0x31363b"
+blue = "0x1b668f"
+cyan = "0x186c60"
+green = "0x17a262"
+magenta = "0x614a73"
+red = "0x783228"
+white = "0x63686d"
+yellow = "0xb65619"
 
 [colors.normal]
-black = "0x1E1E1E"
-blue = "0x61afef"
-cyan = "0x56b6c2"
-green = "0x98c379"
-magenta = "0xf33636"
-red = "0xff6c6b"
-white = "0xdddddd"
-yellow = "0xd19a66"
+black = "0x232627"
+blue = "0x1d99f3"
+cyan = "0x1abc9c"
+green = "0x11d116"
+magenta = "0x9b59b6"
+red = "0xed1515"
+white = "0xfcfcfc"
+yellow = "0xf67400"
 
 [colors.primary]
-background = "0x1E1E1E"
-foreground = "0xE3E3E3"
+background = "0x232627"
+foreground = "0xfcfcfc"
+
+[colors.selection]
+background = "0x31363b"
+text = "0xfcfcfc"
 
 [cursor]
 style = "Block"
-unfocused_hollow = true
-
-[debug]
-log_level = "Warn"
-
-[env]
-TERM = "xterm-256color"
 
 [font]
-size = 7.4
+size = 12.0
+
+[font.glyph_offset]
+x = 0
+y = 0
 
 [font.normal]
 family = "monospace"
 style = "Regular"
 
+[font.offset]
+x = 0
+y = 0
+
+[[keyboard.bindings]]
+action = "Paste"
+key = "V"
+mods = "Control|Shift"
+
+[[keyboard.bindings]]
+action = "Copy"
+key = "C"
+mods = "Control|Shift"
+
+[[keyboard.bindings]]
+action = "IncreaseFontSize"
+key = "Plus"
+mods = "Control"
+
+[[keyboard.bindings]]
+action = "DecreaseFontSize"
+key = "Minus"
+mods = "Control"
+
+[[keyboard.bindings]]
+action = "ResetFontSize"
+key = "Equals"
+mods = "Control"
+
+[[keyboard.bindings]]
+action = "Quit"
+key = "Q"
+mods = "Control"
+
+[[keyboard.bindings]]
+action = "ScrollLineDown"
+key = "J"
+mods = "Control"
+
+[[keyboard.bindings]]
+action = "ScrollLineUp"
+key = "K"
+mods = "Control"
+
+[[mouse.bindings]]
+action = "Paste"
+mods = "None"
+mouse = "Middle"
+
+[[mouse.bindings]]
+action = "Paste"
+mods = "Control"
+mouse = "Right"
+
+[[keyboard.bindings]]
+key = "Backspace"
+mods = "Control"
+chars = "\u0017"
+
 [scrolling]
-history = 5000
+history = 10000
 multiplier = 3
 
-[window]
-opacity = 0.5
-title = "Terminal"
+[shell]
+args = ["--login"]
+program = "/bin/bash"
 
-[window.class]
-general = "Alacritty"
-instance = "Alacritty"
+[window]
+decorations = "full"
+dynamic_padding = false
+startup_mode = "Windowed"
+title = "Alacritty"
+opacity = 0.9
+
+[window.dimensions]
+columns = 80
+lines = 24
 
 [window.padding]
-x = 6
-y = 6
+x = 2
+y = 2
+
